@@ -18,3 +18,9 @@
  * jQuery
  * Twitter bootstrap
  * Erik Flowers weather icons
+4. Api keys
+ * Add a "apikeys.js" file at the root directory and store your apikeys
+         Keys = {
+           FORCAST_IO_KEY: "Your Dark Sky API Key",
+           GOOGLE_MAPS_KEY: "Your Google Maps API keys"
+         }
