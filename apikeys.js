@@ -1,5 +1,0 @@
-
-module.exports = Keys = {
-  FORCAST_IO_KEY: "2374093c2fb941ec35ea56c924888425",
-  GOOGLE_MAPS_KEY: "AIzaSyA5IMvt44BgUBVCYfNICNKsHuyCUBuE2o0"
-}
