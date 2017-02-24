@@ -1,7 +1,7 @@
 # Local weather app
 ## Description :
 1. Client side:
- * Get the user geoloc coordinates with navigator.geolocation
+ * Get the user geoloc coordinates with navigator.geolocation.
  * Make an ajax GET request to the server <hostname>/longitude,latitude
 2. Server side:
  * use node module forcastio wrapper https://www.npmjs.com/package/forecast.io to get weather data
@@ -20,7 +20,10 @@
  * Erik Flowers weather icons
 4. Api keys
  * Add a "apikeys.js" file at the root directory and store your apikeys
-         Keys = {
+   
+`Keys = {
+
            FORCAST_IO_KEY: "Your Dark Sky API Key",
            GOOGLE_MAPS_KEY: "Your Google Maps API keys"
-         }
+         
+}`
