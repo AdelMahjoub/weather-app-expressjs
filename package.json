@@ -1,0 +1,21 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "weather forecast",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Adel Mahjoub",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "forecastio": "^1.0.2",
+    "googlemaps": "^1.12.0",
+    "morgan": "^1.8.1",
+    "serve-favicon": "^2.4.0"
+  }
+}
