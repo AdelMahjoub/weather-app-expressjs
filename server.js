@@ -6,7 +6,6 @@ const path = require("path");
 const logger = require("morgan");
 const fs = require("fs");
 const GoogleMapsApi = require("googlemaps");
-const favicon = require("serve-favicon");
 const KEYS = require("./apikeys");
 
 //Express App
@@ -32,7 +31,6 @@ app.use(compression());
 
 // Static Files Middleware
 app.use(express.static(path.join(__dirname, "public")));
-app.use(favicon(path.join(__dirname, "public", "favicon.ico")));
 
 // Set views
 app.set("views", path.resolve(__dirname, "views"));

@@ -4,8 +4,8 @@
   "description": "weather forecast",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "Adel Mahjoub",
   "license": "MIT",
@@ -17,5 +17,17 @@
     "googlemaps": "^1.12.0",
     "morgan": "^1.8.1",
     "serve-favicon": "^2.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdelMahjoub/weather-app-expressjs.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "local weather",
+    "weather forecast",
+    "meteo locale"
+  ]
 }
