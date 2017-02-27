@@ -13,7 +13,6 @@ const app = express();
 app.set("port", process.env.PORT || 3000);
 
 // ForecastIo object
-const API_KEY = KEYS.FORCAST_IO_KEY;
 const weather = new ForecastIo(process.env.FORCAST_IO_KEY);
 
 // GoogleMaps object
