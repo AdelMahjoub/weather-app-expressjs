@@ -139,7 +139,7 @@ $(document).ready(() => {
   }
 
   const gelocError = () => {
-    $("#loading h1").html("Unable to retrive your location");
+    $("#loading").html("<h2>Unable to retrive your location</h2>");
   }
   getData();
 });
