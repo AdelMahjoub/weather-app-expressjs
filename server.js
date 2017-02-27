@@ -15,11 +15,11 @@ app.set("port", process.env.PORT || 3000);
 
 // ForecastIo object
 const API_KEY = KEYS.FORCAST_IO_KEY;
-const weather = new ForecastIo(API_KEY);
+const weather = new ForecastIo(process.env.FORCAST_IO_KEY || KEYS.FORCAST_IO_KEY);
 
 // GoogleMaps object
 const publicConfig = {
-  key: KEYS.GOOGLE_MAPS_KEY
+  key: GOOGLE_MAPS_KEY || KEYS.GOOGLE_MAPS_KEY
 }
 let location = new GoogleMapsApi(publicConfig);
 
