@@ -3,7 +3,7 @@ $(document).ready(() => {
   $("#city").html("Loading ...");
   const getData = () => {
     if(navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(request);
+      navigator.geolocation.getCurrentPosition(request, gelocError);
     } else {
       alert("Geolocation is not supported by your browser");
     }
@@ -136,6 +136,10 @@ $(document).ready(() => {
       showWeatherInfo(data.weather.daily.data[3], "3", data.lang);
       renderStaticIcons();
     });
+  }
+
+  const gelocError = () => {
+    $("#loading h1").html("Unable to retrive your location");
   }
   getData();
 });
