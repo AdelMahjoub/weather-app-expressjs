@@ -6,7 +6,6 @@ const path = require("path");
 const logger = require("morgan");
 const fs = require("fs");
 const GoogleMapsApi = require("googlemaps");
-const KEYS = require("./apikeys");
 
 //Express App
 const app = express();
@@ -15,11 +14,11 @@ app.set("port", process.env.PORT || 3000);
 
 // ForecastIo object
 const API_KEY = KEYS.FORCAST_IO_KEY;
-const weather = new ForecastIo(process.env.FORCAST_IO_KEY || KEYS.FORCAST_IO_KEY);
+const weather = new ForecastIo(process.env.FORCAST_IO_KEY);
 
 // GoogleMaps object
 const publicConfig = {
-  key: process.env.GOOGLE_MAPS_KEY || KEYS.GOOGLE_MAPS_KEY
+  key: process.env.GOOGLE_MAPS_KEY
 }
 let location = new GoogleMapsApi(publicConfig);
 
