@@ -19,7 +19,7 @@ const weather = new ForecastIo(process.env.FORCAST_IO_KEY || KEYS.FORCAST_IO_KEY
 
 // GoogleMaps object
 const publicConfig = {
-  key: GOOGLE_MAPS_KEY || KEYS.GOOGLE_MAPS_KEY
+  key: process.env.GOOGLE_MAPS_KEY || KEYS.GOOGLE_MAPS_KEY
 }
 let location = new GoogleMapsApi(publicConfig);
 
