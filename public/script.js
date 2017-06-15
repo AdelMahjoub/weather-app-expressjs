@@ -125,6 +125,7 @@ $(document).ready(() => {
     $.ajax({
       url: link,
     }).done((data) => {
+      console.log(data);
       $("#loading").addClass("hidden");
       $("#app").removeClass("hidden");
       showWeatherInfo(data, "");
